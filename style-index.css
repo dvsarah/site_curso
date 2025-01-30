@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
     font-family: "Cabin", serif;
     color: #40592E;
@@ -9,21 +16,35 @@ body{
 
 header{
     background: linear-gradient(to right,#a67683 , #40592e);
+    padding: 20px 0;
+    text-align: center;
+    text-shadow: 0cap;
+    letter-spacing: 0cqmax;
+    
+    flex-wrap: wrap;
+
+
+
 }
 
 header img{
-    width: 150px;
+    width: 200px;
     height: auto; /*automatico*/
+    margin-bottom: 20px;
 }
 
 header p{
     font-weight: bold;
     font-size: 18px;
     text-align: center;
+    color: #92176d;
+    padding-bottom: 20px;
 }
 
 nav {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
@@ -31,11 +52,21 @@ nav a {
     color:#f2e0c9;
     font-weight: bold;
     font-size: 1rem;
+    margin:0 10px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+nav a:hover{
+    color:#ffd700; 
 }
 
 
 main{
     text-align: center;
+    padding:20px
 }
 
 #frase-de-efeito{
@@ -50,4 +81,76 @@ main{
 h1{
     color:#40592e;
     font-size: 2rem;
+    padding: 20px;
+}
+
+
+#topo{
+    padding-top: 20px;
+}
+
+#topo a{
+    text-decoration:none ;
+    color:#0d0d0d
+}
+
+#topo a:hover{
+    color: #40592e
+}
+
+.container{
+    display: flex;
+    gap:20px;  /* espaço entre os blocos*/
+    max-width: 1000px;
+    margin: 0 auto; 
+    flex-wrap: wrap;
+}
+
+.main-block{
+    background-color: #ebd2aa; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(17, 43, 15, 0.267);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 20px; /*aumentar os blocos*/
+
+}
+
+.container h2{
+    color:#8c3746;
+}
+
+.container p{
+    color:#0d0d0d;
+    padding: 5px;
+    font-weight: 450;
+}
+
+.main-block a{
+    color:#f2e0c9;
+    background-color: #40592E;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 15px;
+    max-width: 150px;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+.main-block a:hover{
+    color:black;
+    background-color: #ffd700;
+}
+
+
+
+footer{
+    background-color: #4f4023;
+    color:#f2e0c9;
+    text-align: center;
+    padding: 20px 0px;
 }
